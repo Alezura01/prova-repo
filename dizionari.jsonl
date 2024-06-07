@@ -1,14 +1,4 @@
-import json
+{1: ['C','NC','C'], 2:['NC','C','C'], 3: ['C','NC','C'] }
+{2: ['NC','NC','C'], 2:['NC','C','NC'], 3: ['C','C','NC'] }
+{3: ['C','C','C'], 2:['NC','NC','NC'], 3: ['NC','C','NC'] }
 
-# Lista di dizionari
-dizionari = [
-    {1: ['C','NC','C'], 2:['NC','C','C'], 3: ['C','NC','C'] },
-    {2: ['NC','NC','C'], 2:['NC','C','NC'], 3: ['C','C','NC'] },
-    {3: ['C','C','C'], 2:['NC','NC','NC'], 3: ['NC','C','NC'] }
-]
-
-# Scrivere la lista di dizionari nel file JSONL, un dizionario per linea
-with open('dizionari.jsonl', 'w') as file:
-    for dizionario in dizionari:
-        json.dump(dizionario, file)
-        file.write('\n')
